@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Residencia Escalon</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes ">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="#" class="scene" data-id="0-cochera-1">
+        <li class="text">Cochera 1</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="1-descanso-cochera---sala">
+        <li class="text">Descanso Cochera - Sala</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="2-nivel-1">
+        <li class="text">Nivel 1</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="3-sala--comedor---1">
+        <li class="text">Sala / Comedor - 1</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="4-sala--comedor---2">
+        <li class="text">Sala / Comedor - 2</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="5-sala-1">
+        <li class="text">Sala 1</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="6-bao---sala">
+        <li class="text">Baño - Sala</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="7-sala-2">
+        <li class="text">Sala 2</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="8-jardin-1">
+        <li class="text">Jardin 1</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="9-jardin-2">
+        <li class="text">Jardin 2</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="10-habitacion-1---n1">
+        <li class="text">Habitacion 1 - N1</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="11-pasillo-1---n1">
+        <li class="text">Pasillo 1 - N1</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="12-habitacion-2---n1">
+        <li class="text">Habitacion 2 - N1</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="13-pasillo-2---n1">
+        <li class="text">Pasillo 2 - N1</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="14-zona-de-lavado">
+        <li class="text">Zona de lavado</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="15-cocina">
+        <li class="text">Cocina</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="16-descanso-nivel-2">
+        <li class="text">Descanso Nivel 2</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="17-nivel-2">
+        <li class="text">Nivel 2</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="18-pasillo-1---n2">
+        <li class="text">Pasillo 1 - N2</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="19-pasillo-2---n2">
+        <li class="text">Pasillo 2 - N2</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="20-habitacion-1---n2">
+        <li class="text">Habitacion 1 - N2</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="21-terraza---n2">
+        <li class="text">Terraza - N2</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="22-habitacion-2---n2">
+        <li class="text">Habitacion 2 - N2</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="23-habitacion-3---n2">
+        <li class="text">Habitacion 3 - N2</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="24-habitacion-master---n2">
+        <li class="text">Habitacion Master - N2</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="25-master---walk-in-closet">
+        <li class="text">Master - Walk in Closet</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="26-master---bao">
+        <li class="text">Master - Baño</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="27-habitacion-4---n2">
+        <li class="text">Habitacion 4 - N2</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="28-bao-h4---n2">
+        <li class="text">Baño H4 - N2</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="29-terraza-h4---n2">
+        <li class="text">Terraza H4 - N2</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="30-descanso-azotea">
+        <li class="text">Descanso Azotea</li>
+      </a>
+    
+      <a href="#" class="scene" data-id="31-azotea">
+        <li class="text">Azotea</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="#" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="#" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="#" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="#" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="#" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="#" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="#" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="#" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="#" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/es5-shim.js"></script>
+<script src="vendor/eventShim.js"></script>
+<script src="vendor/classList.js"></script>
+<script src="vendor/requestAnimationFrame.js" ></script>
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
