@@ -183,7 +183,7 @@
   }
 
   function switchScene(scene) {
-    stopAutorotate();
+    //stopAutorotate();
     scene.view.setParameters(scene.data.initialViewParameters);
     scene.scene.switchTo();
     startAutorotate();
