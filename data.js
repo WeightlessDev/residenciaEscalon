@@ -1340,7 +1340,7 @@ var APP_DATA = {
   "name": "Residencia Escalon",
   "settings": {
     "mouseViewMode": "drag",
-    "autorotateEnabled": false,
+    "autorotateEnabled": true,
     "fullscreenButton": false,
     "viewControlButtons": false
   }
